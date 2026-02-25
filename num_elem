@@ -1,0 +1,12 @@
+/*
+
+num_elem(+Lista, -Resultado)
+	es cierto si Resultado unifica con el número de elementos de Lista.
+
+Principio de inducción
+1. num_elem
+
+*/
+
+num_elem([],0).
+num_elem([Cabecera|Resto],R2) :- num_elem(Resto,R), R2 is R + 1.
